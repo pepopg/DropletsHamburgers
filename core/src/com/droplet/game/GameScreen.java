@@ -36,7 +36,7 @@ public class GameScreen implements Screen {
 
 		// load the images for the droplet and the bucket, 64x64 pixels each
 		background = new Texture(Gdx.files.internal("background/GameBackground.png"));
-		dropImage = new Texture(Gdx.files.internal("sprites/hamburger.png"));
+		dropImage = new Texture(Gdx.files.internal("sprites/hamburger2.png"));
 		plateImage = new Texture(Gdx.files.internal("sprites/plate.png"));
 		dropSound = Gdx.audio.newSound(Gdx.files.internal("sounds/card.wav"));
 
@@ -146,8 +146,12 @@ public class GameScreen implements Screen {
 			
 			game.batch.end();
 			
-			/* game.setScreen(new EndingMenu(game));
-			dispose(); */
+		} 
+		
+		if (dropsGathered >= 40) 
+		{
+			game.setScreen(new EndingMenu(game));
+			dispose();
 		} 
 	}
 
