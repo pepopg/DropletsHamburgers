@@ -5,7 +5,7 @@ import java.util.Iterator;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.audio.Music;
+//import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -36,7 +36,7 @@ public class GameScreen implements Screen {
 
 		// load the images for the droplet and the bucket, 64x64 pixels each
 		background = new Texture(Gdx.files.internal("background/GameBackground.png"));
-		dropImage = new Texture(Gdx.files.internal("sprites/hamburger2.png"));
+		dropImage = new Texture(Gdx.files.internal("sprites/hamburger.png"));
 		plateImage = new Texture(Gdx.files.internal("sprites/plate.png"));
 		dropSound = Gdx.audio.newSound(Gdx.files.internal("sounds/card.wav"));
 
@@ -138,7 +138,7 @@ public class GameScreen implements Screen {
 			}
 		}
 		
-		if (dropsGathered >= 20) 
+		if (dropsGathered >= 25) 
 		{
 			game.batch.begin();
 			
@@ -148,7 +148,7 @@ public class GameScreen implements Screen {
 			
 		} 
 		
-		if (dropsGathered >= 40) 
+		if (dropsGathered >= 50) 
 		{
 			game.setScreen(new EndingMenu(game));
 			dispose();
