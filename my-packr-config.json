@@ -1,14 +1,11 @@
 {
     "platform": "windows64",
-    "jdk": "zulu17.42.19-ca-jre17.0.7-win_i686.tar.gz",
-    "executable": "myapp",
+    "jdk": "OpenJDK17U-jdk_x64_windows_hotspot_17.0.7_7.zip",
+    "executable": "packr",
     "classpath": [
-        "C:/Users/marku/Programming-Workspace/Projekti/Java/DropletsHamburgers/desktop/build/libs/desktop-1.0.jar"
+        "desktop/build/libs/desktop-1.0.jar"
     ],
-    "removelibs": [
-        "desktop-1.0.jar"
-    ],
-    "mainclass": "com.droplet.game.DropletsHamburgers",
+    "mainclass": "com.droplet.game.DesktopLauncher",
     "vmargs": [
        "Xmx1G"
     ],
