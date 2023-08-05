@@ -1,5 +1,5 @@
 # DropletsHamburgers
-A little game I made.
+A primative game I made, that is based on the libGDX "A Simple Game" tutorial.
 
 To compile the project you will need Gradle - https://gradle.org/
 
